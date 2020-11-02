@@ -19,7 +19,7 @@ class Stack
 public:
    bool empty() const {return container.empty(); }
    unsigned int size() const {return container.size(); }
-   void push(const T & x) {return container.push_back(); }
+   void push(const T & x) {return container.push_back(x); }
    void push(T && x) {return container.push_back(move(x)); }
    void pop() {return container.pop_back(); }
    T & top() {return container.back(); }
